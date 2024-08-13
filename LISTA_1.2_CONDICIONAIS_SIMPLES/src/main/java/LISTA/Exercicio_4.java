@@ -8,23 +8,21 @@ import java.util.Scanner;
 
 /**
  *
- * @author m.schmidt
+ * @author mathe
  */
-public class Exercicio_1 {
+public class Exercicio_4 {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         
-        int limite = 80;
+        System.out.println("Por favor, insira um número inteiro:");
+        int numero = ler.nextInt();
         
-        System.out.println("Escreva a velocidade do seu carro:");
-        int velocidade = ler.nextInt();
+        int vericador = numero % 2;
         
-        if(limite > velocidade){
-            float multa = (float) (limite - velocidade) * 5;
-            
-            System.out.println("Você foi multado em:"+multa);
+        if(vericador == 0){
+            System.out.println("O número "+numero+" é PAR.");
         }else{
-            System.out.println("Você não foi multado");
+            System.out.println("O número "+numero+" é ÍMPAR.");
         }
     }
 }
