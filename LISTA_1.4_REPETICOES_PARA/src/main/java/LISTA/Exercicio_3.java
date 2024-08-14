@@ -8,17 +8,18 @@ import java.util.Scanner;
 
 /**
  *
- * @author m.schmidt
+ * @author mathe
  */
-public class Exercicio_4 {
+public class Exercicio_3 {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         
-        System.out.println("Digite um número:");
-        float num = ler.nextFloat();
+        System.out.println("Digite um valor:");
+        int i =  ler.nextInt();
         
-        System.out.println("O dobro de "+num+" é "+(num*2));
-        
-        System.out.println("A terça parte de"+num+"é"+(num/3));
+        for(int p = 0 ; p <= i; p = p+1){
+            System.out.println(p+", ");
+        }
+        System.out.println("FIM!");
     }
 }
